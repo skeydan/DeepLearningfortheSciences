@@ -1,0 +1,95 @@
+---
+title: Deep Learning for the Sciences
+subtitle: Escaping the black box
+format:
+  revealjs: 
+    theme: dark
+editor: visual
+self-contained: true
+output-file: DeepLearningfortheSciences.html
+---
+
+## This is deep learning
+
+<br />
+
+> Solve anything, with big data, big models, and big compute
+
+<br />
+
+"Normal" users dispose of none of these.
+
+## Could DL be conceptualized differently?
+
+<br />
+
+Yes!
+
+-   Let domain-/task-derived principles guide choice of architecture (*Geometric Deep Learning*)
+
+-   Make use of pre-existing, subject-specific *domain knowledge*
+
+## [Geometric Deep Learning](https://arxiv.org/abs/2104.13478) (GDL)
+
+Neural network design is subject to *constraints* derived from the domain and the task:
+
+-   *Symmetries* correspond to conserved quantities
+
+    -   Invariances
+
+    -   Equivariances
+
+-   Scale separation (coarse-graining)
+
+High-level intro: [Beyond alchemy: A first look at geometric deep learning](https://blogs.rstudio.com/ai/posts/2021-08-26-geometric-deep-learning/)
+
+## GDL: Why it matters
+
+-   Standard DL algorithms/architectures do not satisfy constraints inherent in many tasks. E.g., convolution is not rotation-equivariant.
+-   Practical GDL research builds *tools* to handle these tasks.
+-   Such tasks are everywhere:
+    -   Medicine (MRI ...)
+
+    -   Earth sciences (the Earth is not flat ...)
+
+    -   Computer vision (need deformation, and other non-linear transformations)
+
+## Field-specific domain knowledge
+
+-   Ranges from foundational (Newton's second law) to very concrete (pressure increases with depth).
+-   Commonly incorporated by
+    -   Custom loss functions / regularizations
+
+    -   Custom layers / architectures
+
+    -   Stochasticity
+
+    -   Custom operators acting in the spectral domain
+
+## Field-specific domain knowledge: Why it matters
+
+\[Answering the rhetorical question anyway.\]
+
+-   Reliability
+
+-   Explainability
+
+-   Trust
+
+-   Why waste resources to learn what we know?
+
+## Example 1: Geometric Deep Learning
+
+<br />
+
+TBD
+
+
+## Example 1: Field-specific domain knowledge
+
+<br />
+
+TBD
+
+
+
